@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/index.css">
+    <link rel="stylesheet" href="/Script.js">
+    <title>Contact</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container">
+
+                <a class=" navbar-brand" href="#">Portfolio</a>
+                <div id="social-icon">
+                    <img src="/Images/instagram.png" id="social-icons" alt="">
+                    <img src="/Images/linkedin.png" id="social-icons" alt="">
+                    <img src="/Images/github.png" id="social-icons" alt="">
+                    <img src="/Images/facebook.png" id="social-icons" alt="">
+                </div>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item" id="Home">
+                            <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="/Aboutme.html">About-Me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="/Skills.html">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="/Projects.html">Project</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="/Services.html">Service's</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="/Contact.html">Contact</a>
+                        </li>
+                        <li><img id="dark_btn" onclick="changeImage()" src="/Images/light_cloud.png" alt=""
+                                class="dark" /></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="Skills">
+            <h1 class="about_head">Conatct Us !</h1>
+            <hr>
+            <div class="contact_main">
+                <div class="contact_map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3690.028835370681!2d77.09100797447348!3d22.352540041001433!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397d713054152003%3A0x4e2a07ea422e1e72!2sJai%20Shakti%20Homes!5e0!3m2!1sen!2sin!4v1700828919079!5m2!1sen!2sin"
+                        width="450" height="450" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+                <div class="contact_form">
+                    <div class="form">
+                        <form action="">
+                            <label for="">First Name</label><br>
+                            <input type="text" name="firstname" placeholder="  FIRST NAME"><br>
+                            <label for="">Last Name</label><br>
+                            <input type="text" name="lastname" placeholder="  LAST NAME"><br>
+                            <label for="">Email Address</label><br>
+                            <input type="text" name="firstname" placeholder="  example@gmail.com"><br>
+                            <label for="">Message</label><br>
+                            <input type="text" name="firstname" placeholder="  Message for me .....">
+                            <button>SUBMIT</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<script>
+    function changeImage() {
+        var image = document.getElementById('dark_btn');
+        if (image.src.match("dark")) {
+            image.src = "Images/light_cloud.png";
+        } else {
+            image.src = "Images/dark cloud.png";
+        }
+    }
+
+</script>
